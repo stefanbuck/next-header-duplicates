@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import LayoutHome from '../components/LayoutHome'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <LayoutHome className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:title" content="index.js" />
+        <meta property="og:title" content="index.js" />
       </Head>
 
       <main className={styles.main}>
@@ -60,6 +63,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
+    </LayoutHome>
   )
 }
